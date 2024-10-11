@@ -9,7 +9,10 @@ fn factorial(num: u64) -> u64 {
     // - imperative style loops (for/while)
     // - additional variables
     // For an extra challenge, don't use:
-    // - recursion
+    // - 
+    let mut a:u64 = 1;
+    (1..=num).for_each(|x| a *= x);
+    a
 }
 
 fn main() {
